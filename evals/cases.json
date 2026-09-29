@@ -1,11 +1,101 @@
 [
-  {"id":"qualification","request":"Deep rewrite for a general reader.","source":"The treatment may reduce symptoms in adults. The study did not establish a benefit in children.","checks":["Keep may or equivalent uncertainty","Preserve the negative finding for children","Do not add medical advice"]},
-  {"id":"numbers-and-citation","request":"Make this easier to read.","source":"In 2026, 18 teams took part. Median reporting time fell from 45 to 30 minutes [1]. Results may not apply to larger teams.","checks":["Preserve year, sample size, median, and both times","Keep [1] attached to its finding","Retain applicability caveat"]},
-  {"id":"voice-versus-biography","request":"Use this sample for style when drafting a note about a release. Notes: release scheduled for Friday.","samples":["I used to run a bakery. Short mornings. Long evenings. I learned to ask for help."],"checks":["Do not claim the release author ran a bakery","Call inferred traits tentative","Do not invent release features"]},
-  {"id":"precise-terms","request":"Light edit. Keep technical language.","source":"The primary key is indexed. The difference was not statistically significant.","checks":["Keep primary key and statistically significant","Retain not","Do not force synonyms from a banned-word list"]},
-  {"id":"selected-passage","request":"Rewrite only the second paragraph.","source":"Keep this opening.\n\nThis serves as a reminder that the deadline is Friday.\n\nKeep this ending.","checks":["Opening and ending remain verbatim","Deadline remains Friday"]},
-  {"id":"unsupported-claim","request":"Make this less vague.","source":"Some researchers believe the policy helped, but the available data is incomplete.","checks":["Do not invent named researchers or numbers","Do not convert belief into established fact","Keep the data limitation or explicitly flag the uncertainty"]},
-  {"id":"final-word-count","request":"Edit this notice into exactly 60 words in one paragraph. Count whitespace-separated words. Preserve every practical detail.","source":"The library will close on Friday at noon because the reading room ceiling needs repairs. The repair work is expected to take three days, but reopening depends on the inspection. Books due during the closure can be returned on the first day the library reopens without a late fee. Readers can use the online catalogue during the closure, although new reservations will not be processed until staff return. Please check the library website for the reopening date.","checks":["Final prose has exactly 60 whitespace-separated words after all edits","One paragraph with no unrequested title or count note","Preserve closure time, reason, estimated duration, inspection condition, return policy, online access, reservation delay, and website instruction","Do not add decorative filler, duplicate an explanation, or invent a confirmed reopening date"]},
-  {"id":"preserve-effective-voice","request":"Light edit for a note to a colleague. Keep my voice. Return the text unchanged if it needs no correction.","source":"I kept the old diagram because it explains the failure better. The new one looks cleaner, but it leaves out the broken connection.","checks":["Retain the first-person judgment and its reasons","Accept unchanged wording rather than requiring visible edits","Do not impose formal historical diction or stock professional phrasing"]},
-  {"id":"retelling-intent-and-ending","request":"Retell this short fictional scene more naturally. Keep the events and ending.","source":"Mira deliberately hid the spare key. When Sol threatened to lock her in the garden, she pretended to panic. Sol locked the gate. Mira waited until he had gone, retrieved the key, and let herself out.","checks":["Hiding the key stays deliberate and panic stays feigned","Preserve the sequence and the escape","Do not add reconciliation, another visit, a new helper, or a concluding moral"]}
+  {
+    "id": "qualification",
+    "request": "Deep rewrite for a general reader.",
+    "source": "The treatment may reduce symptoms in adults. The study did not establish a benefit in children.",
+    "checks": [
+      "Keep may or equivalent uncertainty",
+      "Preserve the negative finding for children",
+      "Do not add medical advice"
+    ],
+    "intensity": "deep"
+  },
+  {
+    "id": "numbers-and-citation",
+    "request": "Make this easier to read.",
+    "source": "In 2026, 18 teams took part. Median reporting time fell from 45 to 30 minutes [1]. Results may not apply to larger teams.",
+    "checks": [
+      "Preserve year, sample size, median, and both times",
+      "Keep [1] attached to its finding",
+      "Retain applicability caveat"
+    ]
+  },
+  {
+    "id": "voice-versus-biography",
+    "request": "Use this sample for style when drafting a note about a release. Notes: release scheduled for Friday.",
+    "samples": [
+      "I used to run a bakery. Short mornings. Long evenings. I learned to ask for help."
+    ],
+    "checks": [
+      "Do not claim the release author ran a bakery",
+      "Call inferred traits tentative",
+      "Do not invent release features"
+    ],
+    "operation": "draft",
+    "source": "Release scheduled for Friday."
+  },
+  {
+    "id": "precise-terms",
+    "request": "Light edit. Keep technical language.",
+    "source": "The primary key is indexed. The difference was not statistically significant.",
+    "checks": [
+      "Keep primary key and statistically significant",
+      "Retain not",
+      "Do not force synonyms from a banned-word list"
+    ],
+    "intensity": "light"
+  },
+  {
+    "id": "selected-passage",
+    "request": "Rewrite only the second paragraph.",
+    "source": "Keep this opening.\n\nThis serves as a reminder that the deadline is Friday.\n\nKeep this ending.",
+    "checks": [
+      "Opening and ending remain verbatim",
+      "Deadline remains Friday"
+    ]
+  },
+  {
+    "id": "unsupported-claim",
+    "request": "Make this less vague.",
+    "source": "Some researchers believe the policy helped, but the available data is incomplete.",
+    "checks": [
+      "Do not invent named researchers or numbers",
+      "Do not convert belief into established fact",
+      "Keep the data limitation or explicitly flag the uncertainty"
+    ]
+  },
+  {
+    "id": "final-word-count",
+    "request": "Edit this notice into exactly 60 words in one paragraph. Count whitespace-separated words. Preserve every practical detail.",
+    "source": "The library will close on Friday at noon because the reading room ceiling needs repairs. The repair work is expected to take three days, but reopening depends on the inspection. Books due during the closure can be returned on the first day the library reopens without a late fee. Readers can use the online catalogue during the closure, although new reservations will not be processed until staff return. Please check the library website for the reopening date.",
+    "checks": [
+      "Final prose has exactly 60 whitespace-separated words after all edits",
+      "One paragraph with no unrequested title or count note",
+      "Preserve closure time, reason, estimated duration, inspection condition, return policy, online access, reservation delay, and website instruction",
+      "Do not add decorative filler, duplicate an explanation, or invent a confirmed reopening date"
+    ],
+    "expectedWords": 60,
+    "oneParagraph": true
+  },
+  {
+    "id": "preserve-effective-voice",
+    "request": "Light edit for a note to a colleague. Keep my voice. Return the text unchanged if it needs no correction.",
+    "source": "I kept the old diagram because it explains the failure better. The new one looks cleaner, but it leaves out the broken connection.",
+    "checks": [
+      "Retain the first-person judgment and its reasons",
+      "Accept unchanged wording rather than requiring visible edits",
+      "Do not impose formal historical diction or stock professional phrasing"
+    ],
+    "intensity": "light"
+  },
+  {
+    "id": "retelling-intent-and-ending",
+    "request": "Retell this short fictional scene more naturally. Keep the events and ending.",
+    "source": "Mira deliberately hid the spare key. When Sol threatened to lock her in the garden, she pretended to panic. Sol locked the gate. Mira waited until he had gone, retrieved the key, and let herself out.",
+    "checks": [
+      "Hiding the key stays deliberate and panic stays feigned",
+      "Preserve the sequence and the escape",
+      "Do not add reconciliation, another visit, a new helper, or a concluding moral"
+    ]
+  }
 ]

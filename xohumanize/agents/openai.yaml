@@ -1,4 +1,4 @@
 interface:
   display_name: "xoHumanize"
   short_description: "Edit with your voice and review what changed"
-  default_prompt: "Use $xohumanize to edit my draft at standard intensity, preserve its meaning, and use my supplied voice profile if available."
+  default_prompt: "Use $xohumanize to lightly edit my draft, keep my effective phrasing and meaning, and use my supplied voice profile if available."

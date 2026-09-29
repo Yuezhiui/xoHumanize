@@ -36,7 +36,7 @@ export function normalizeRequest(input) {
   if (!object(input)) throw new Error('Provide a JSON object.');
   const operation = input.operation ?? 'edit';
   if (!['edit', 'draft', 'analyze', 'profile'].includes(operation)) throw new Error('Unknown operation.');
-  const intensity = input.intensity ?? 'standard';
+  const intensity = input.intensity ?? (operation === 'edit' ? 'light' : 'standard');
   if (!Object.hasOwn(LEVELS, intensity)) throw new Error('Choose light, standard, or deep editing.');
   const request = {
     operation, intensity,

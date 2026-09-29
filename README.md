@@ -29,6 +29,8 @@ The rules protect facts, citations, quotations, technical terms, and uncertainty
 
 You can choose light, standard, or deep editing; build a reusable voice profile from your own writing; and ask for a diagnosis, comparison, or fidelity review. Selected-passage edits keep the surrounding text intact.
 
+Editing a supplied draft now starts with **Light**: keep your effective phrasing and change what needs attention. Choose Standard or Deep when you want a broader rewrite. To work in your own voice, start with your draft and optionally add relevant samples; writing from notes creates a new draft and cannot establish your personal voice by itself.
+
 The same editing principles apply to emails, essays, reports, documentation, and stories: concrete detail, a clear progression of ideas, purposeful sentence rhythm, and precise language. The voice adapts to the audience and genre. A formal report can stay formal, and a story can retain its atmosphere. The rules preserve intentions, qualifications, and exceptions as carefully as names and numbers.
 
 ## Harness skill
@@ -137,6 +139,8 @@ npm run build
 ```
 
 Tests cover request and response validation, profile portability, exact passage replacement, diff reconstruction, fidelity warnings, and HTTP/provider behavior using mocks. [Behavioral evaluation cases](evals/README.md) cover meaning preservation and voice matching. The automated tests do not prove live model quality. A model's review of its own writing is an editorial aid, and the literal checks can produce false alarms.
+
+For controlled comparisons, run `npm run eval -- prepare`. It freezes the baseline and candidate skill instructions, identical case inputs, model settings, and repeated A/B prompts in an ignored private folder. You can generate responses through your configured provider or bring back responses from a harness, then use `npm run eval -- report <run-directory>` to review length checks, fidelity warnings, and human assessments. Detector results can be recorded manually with their original meanings; the runner never submits text to detectors. See the [comparison workflow](evals/README.md) before running provider calls. The pinned baseline is a reference, not evidence of detector avoidance.
 
 ## The rules
 

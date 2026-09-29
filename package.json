@@ -9,6 +9,7 @@
     "start": "node --env-file-if-exists=.env server/index.mjs",
     "test": "node --test",
     "check": "node --check server/index.mjs && node --check web/app.mjs && node --test",
-    "build": "node scripts/build.mjs"
+    "build": "node scripts/build.mjs",
+    "eval": "node --env-file-if-exists=.env scripts/evaluate.mjs"
   }
 }

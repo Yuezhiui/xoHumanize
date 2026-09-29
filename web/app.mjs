@@ -4,6 +4,7 @@ const $ = id => document.getElementById(id);
 const PROFILE_KEY = 'xohumanize.profiles.v1', HISTORY_KEY = 'xohumanize.history.v1';
 let instructions = '', connection = { ready: false }, profiles = [], history = [], selection = null;
 let pending = null, current = null, controller = null, busy = false, activeView = 'text', transientProfile = null;
+let intensityChosen = false;
 const words = text => text.trim() ? text.trim().split(/\s+/u).length : 0;
 function notify(message, target = 'status') { $(target).textContent = message; }
 function handle(id, event, fn, target = 'status') {
@@ -140,6 +141,7 @@ function renderHistory() {
       $('source').value = request.source; $('task').value = request.operation === 'draft' ? 'draft' : 'edit';
       for (const key of ['audience', 'purpose', 'context']) $(key).value = request[key];
       document.querySelector(`input[name=intensity][value="${request.intensity}"]`).checked = true;
+      intensityChosen = true;
       updateIntensity(); restoreScope(request); wordCount(); transientProfile = request.profile; refreshProfiles(transientProfile ? 'transient' : '');
       applyResponse(result, request, false); $('history-dialog').close();
     })); list.append(row);
@@ -147,7 +149,7 @@ function renderHistory() {
 }
 function updateIntensity() {
   const level = document.querySelector('input[name=intensity]:checked').value;
-  $('intensity-help').textContent = { light: 'A gentle cleanup. Keep most of your wording.', standard: 'Improve the flow and phrasing. Keep your argument.', deep: 'Rethink the structure. Preserve your claims and evidence.' }[level];
+  $('intensity-help').textContent = { light: 'Keep your phrasing. Change only what needs attention.', standard: 'Improve the flow and phrasing. Keep your argument.', deep: 'Rethink the structure. Preserve your claims and evidence.' }[level];
 }
 for (const node of document.querySelectorAll('[data-close]')) node.addEventListener('click', () => $(node.dataset.close).close());
 for (const node of document.querySelectorAll('[data-view]')) {
@@ -158,12 +160,15 @@ for (const node of document.querySelectorAll('[data-view]')) {
     event.preventDefault(); changeView(tabs[index].dataset.view); tabs[index].focus();
   });
 }
-document.querySelectorAll('input[name=intensity]').forEach(node => node.addEventListener('change', updateIntensity));
+document.querySelectorAll('input[name=intensity]').forEach(node => node.addEventListener('change', () => { intensityChosen = true; updateIntensity(); }));
 handle('open-voice', 'click', () => $('voice-dialog').showModal()); handle('add-voice', 'click', () => $('voice-dialog').showModal());
 handle('open-history', 'click', () => { renderHistory(); $('history-dialog').showModal(); });
 handle('open-settings', 'click', () => $('settings-dialog').showModal());
 handle('source', 'input', () => { wordCount(); clearSelection(); if (current) notify('You changed the source. The displayed revision still refers to its original draft.'); });
-handle('task', 'change', () => restoreScope());
+handle('task', 'change', () => {
+  if (!intensityChosen) { document.querySelector(`input[name=intensity][value="${$('task').value === 'draft' ? 'standard' : 'light'}"]`).checked = true; updateIntensity(); }
+  restoreScope();
+});
 handle('use-selection', 'click', () => {
   const start = $('source').selectionStart, end = $('source').selectionEnd;
   if (start === end) throw new Error('Select the paragraph or passage you want to edit in your draft first.');

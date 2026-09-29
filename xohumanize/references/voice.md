@@ -40,4 +40,6 @@ Save a profile only when the user asks or explicitly chooses a save action. Use 
 
 ## Personal context
 
+When the user wants writing in their own voice, work from their draft where available. Preserve its effective phrasing and make selective edits; use relevant samples to resolve uncertain choices. With notes alone, describe the result as a new draft. Without a draft or samples, do not claim to have matched the user's personal voice. A detector result does not supply voice evidence.
+
 Use experiences and opinions only when supplied for this task or explicitly authorized for reuse. They may improve a piece when relevant, but their presence does not establish human authorship or any detector outcome. Do not infer them from a voice profile. Keep the author's stance intact and flag a conflict between requested context and source facts.
