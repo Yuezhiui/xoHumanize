@@ -1,0 +1,14 @@
+{
+  "name": "xohumanize",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "engines": { "node": ">=22.9.0" },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env server/index.mjs",
+    "test": "node --test",
+    "check": "node --check server/index.mjs && node --check web/app.mjs && node --test",
+    "build": "node scripts/build.mjs"
+  }
+}

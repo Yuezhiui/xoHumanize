@@ -1,0 +1,12 @@
+import { mkdir, copyFile, writeFile } from 'node:fs/promises';
+import { fileURLToPath } from 'node:url';
+import { resolve } from 'node:path';
+import { loadInstructions } from '../server/index.mjs';
+const root = fileURLToPath(new URL('../', import.meta.url));
+const output = resolve(root, 'dist');
+await mkdir(output, { recursive: true });
+for (const file of ['index.html', 'style.css', 'app.mjs', 'workflow.mjs']) await copyFile(resolve(root, 'web', file), resolve(output, file));
+await writeFile(resolve(output, 'instructions.txt'), await loadInstructions());
+await mkdir(resolve(output, 'api'), { recursive: true });
+await writeFile(resolve(output, 'api/status'), JSON.stringify({ ready: false, requiresToken: false }));
+console.log('Static prompt-mode website built in dist/. No credentials or user data included.');

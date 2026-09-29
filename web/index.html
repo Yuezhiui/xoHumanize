@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Edit with your own voice. A writing workspace with reusable voice profiles, clear comparisons, and source-fidelity reviews.">
+  <title>xoHumanize · Writing room</title>
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./app.mjs"></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="xoHumanize home"><span class="brand-mark">xo</span>Humanize<span class="edition">WRITING ROOM</span></a>
+    <nav aria-label="Workspace"><button id="open-voice" class="quiet">Your voice <span aria-hidden="true">↗</span></button><button id="open-history" class="quiet">History</button><button id="open-settings" class="connection"><span class="dot"></span><span id="connection-label">Connecting</span></button></nav>
+  </header>
+  <main>
+    <section class="intro"><div><p class="eyebrow">A THOUGHTFUL SECOND READ</p><h1>Give your words<br><em>a little room.</em></h1></div><p class="intro-note">Edit for clarity. Keep the details that matter.<br>Bring your voice to every draft.</p></section>
+    <section class="workspace" aria-label="Writing editor">
+      <aside class="brief">
+        <div class="section-title"><span class="step">01</span><h2>The brief</h2></div>
+        <label for="task">What are you working on?</label><select id="task"><option value="edit">Edit a draft</option><option value="draft">Draft from notes</option></select>
+        <fieldset><legend>How much should change?</legend><div class="intensity" aria-label="Rewrite intensity"><label><input type="radio" name="intensity" value="light"><span>Light</span></label><label><input type="radio" name="intensity" value="standard" checked><span>Standard</span></label><label><input type="radio" name="intensity" value="deep"><span>Deep</span></label></div><p id="intensity-help" class="hint">Improve the flow and phrasing. Keep your argument.</p></fieldset>
+        <label for="audience">Who's reading?</label><input id="audience" maxlength="1000" placeholder="e.g. My team, new customers">
+        <label for="purpose">What should the writing do?</label><input id="purpose" maxlength="2000" placeholder="e.g. Explain the next steps">
+        <label for="profile-select">Writing voice</label><select id="profile-select"><option value="">Follow this draft</option></select><button id="add-voice" class="text-button">+ Build a voice from your writing</button>
+        <details class="context"><summary>Personal context <span>optional</span></summary><label for="context" class="sr-only">Relevant personal context</label><textarea id="context" rows="4" maxlength="4000" placeholder="A real experience, opinion, or detail you'd like to include."></textarea><p class="hint">Only add details you want used in this piece.</p></details>
+        <div class="brief-footer"><span class="small-symbol" aria-hidden="true">✳</span><p>Your meaning comes first.<br>Your voice sets the tone.</p></div>
+      </aside>
+      <div class="drafts">
+        <div class="editor-grid">
+          <section class="paper source-paper">
+            <div class="paper-header"><div><span class="step">02</span><h2 id="source-title">Your draft</h2></div><button id="load-example" class="text-button">Try an example</button></div>
+            <label for="source" class="sr-only">Original text or drafting notes</label><textarea id="source" spellcheck="true" maxlength="24000" placeholder="Start with something you've written.&#10;&#10;An email. A paragraph. A rough first draft. Paste it here and we'll work from your words."></textarea>
+            <div class="paper-footer"><span id="source-count">0 words</span><button id="use-selection" class="text-button">Edit selected passage</button></div>
+            <div id="selection-banner" class="selection-banner" hidden><span id="selection-note"></span><button id="clear-selection" class="text-button">Use full draft</button></div>
+          </section>
+          <section class="paper result-paper">
+            <div class="paper-header"><div><span class="step">03</span><h2>The revision</h2></div><span id="result-count" class="count"></span></div>
+            <div class="tabs" role="tablist" aria-label="Revision view"><button role="tab" id="text-tab" aria-selected="true" aria-controls="text-panel" data-view="text">Text</button><button role="tab" id="changes-tab" aria-selected="false" aria-controls="changes-panel" data-view="changes" tabindex="-1">Changes</button><button role="tab" id="review-tab" aria-selected="false" aria-controls="review-panel" data-view="review" tabindex="-1">Review</button></div>
+            <div id="empty-result" class="empty-result"><span class="empty-symbol" aria-hidden="true">a<span>↗</span></span><h3>A fresh look at your words.</h3><p>Your revision will appear here, with a comparison and a review of what changed.</p></div>
+            <div id="text-panel" role="tabpanel" aria-labelledby="text-tab" tabindex="0" class="result-content" hidden></div>
+            <div id="changes-panel" role="tabpanel" aria-labelledby="changes-tab" tabindex="0" class="result-content" hidden></div>
+            <div id="review-panel" role="tabpanel" aria-labelledby="review-tab" tabindex="0" class="review-content" hidden></div>
+            <div class="paper-footer"><span id="result-scope">Waiting for your draft</span><div><button id="copy-result" class="text-button" disabled>Copy</button><button id="download-result" class="text-button" disabled>Download</button></div></div>
+          </section>
+        </div>
+        <div class="actionbar"><p id="mode-note">Checking your model connection…</p><div class="actions"><button id="analyze" class="secondary">Analyze first</button><button id="prepare" class="secondary">Copy prompt</button><button id="run" class="primary">Prepare rewrite <span aria-hidden="true">↗</span></button><button id="cancel" class="secondary" hidden>Cancel</button></div></div>
+        <p id="status" class="status" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+    <footer class="footer"><p>Good edits preserve what you mean.</p><div><span>Open source · MIT</span><a href="https://github.com/Yuezhiui/xoHumanize" target="_blank" rel="noreferrer">Get the harness skill ↗</a></div></footer>
+  </main>
+
+  <dialog id="voice-dialog" aria-labelledby="voice-heading"><div class="dialog-top"><div><p class="eyebrow">WRITING THAT SOUNDS LIKE YOU</p><h2 id="voice-heading">Your voice, on file.</h2></div><button class="close" data-close="voice-dialog" aria-label="Close voice profiles">×</button></div><p class="dialog-description">Add your own writing. We'll look for recurring habits and show the evidence behind each one.</p><label for="samples">Writing samples</label><textarea id="samples" rows="7" maxlength="16000" placeholder="Paste your writing. Separate different samples with a line containing ---."></textarea><p class="hint">A few relevant samples help. One short sample produces a tentative profile. Personal details aren't reused as facts.</p><div class="actions"><button id="analyze-voice" class="primary">Build voice profile</button><label class="secondary file-button">Import profile<input id="import-profile" type="file" accept=".json,application/json"></label></div><div id="profile-area" hidden><label for="profile-json">Profile · review and edit before saving</label><textarea id="profile-json" rows="12" class="code" spellcheck="false"></textarea><div class="actions"><button id="save-profile" class="primary">Save in this browser</button><button id="export-profile" class="secondary">Export JSON</button></div></div><div id="saved-profiles" class="saved-list"></div><p id="voice-status" class="status" role="status"></p></dialog>
+
+  <dialog id="prompt-dialog" aria-labelledby="prompt-heading"><div class="dialog-top"><div><p class="eyebrow">USE YOUR PREFERRED CHATBOT</p><h2 id="prompt-heading">Take the brief with you.</h2></div><button class="close" data-close="prompt-dialog" aria-label="Close prompt">×</button></div><p class="dialog-description">Copy this prompt into your web chatbot. Paste its complete JSON response below to view the result here. The prompt includes your supplied text and selected voice.</p><label for="prompt-text">Prepared prompt</label><textarea id="prompt-text" class="code" rows="6" readonly></textarea><button id="copy-prompt" class="secondary">Copy to clipboard</button><label for="response-text">Chatbot response</label><textarea id="response-text" class="code" rows="7" placeholder='Paste the JSON response here, including the outer { }.'></textarea><button id="import-response" class="primary">Bring back the result</button><p id="prompt-status" class="status" role="status"></p></dialog>
+
+  <dialog id="history-dialog" aria-labelledby="history-heading"><div class="dialog-top"><h2 id="history-heading">Previous drafts</h2><button class="close" data-close="history-dialog" aria-label="Close history">×</button></div><label class="check-label"><input id="persist-history" type="checkbox"> Keep revisions in this browser</label><p class="hint">Up to 20 revisions. Off by default. Turning this off removes saved browser copies; current-session revisions remain until you close the page.</p><div id="history-list" class="saved-list"></div><p id="history-status" class="status" role="status"></p></dialog>
+
+  <dialog id="settings-dialog" aria-labelledby="settings-heading"><div class="dialog-top"><h2 id="settings-heading">Model connection</h2><button class="close" data-close="settings-dialog" aria-label="Close settings">×</button></div><p id="provider-description"></p><p class="dialog-description">The server reads your provider and API key from its environment. Drafts go to that provider only when you run an AI action. In prompt mode, choose where to paste your prompt.</p><label for="access-token">Server access token, if required</label><input id="access-token" type="password" autocomplete="off" placeholder="Kept in memory for this session"><p class="hint">This is your xoHumanize server token, not a model provider API key.</p><p>For setup, see the <a href="https://github.com/Yuezhiui/xoHumanize#web-editor" target="_blank" rel="noreferrer">repository guide</a>.</p><button class="primary" data-close="settings-dialog">Done</button></dialog>
+</body>
+</html>
