@@ -43,6 +43,8 @@ Use direct verbs and concrete descriptions. The lists below are editing flags, n
 
 Apply these principles to emails, essays, reports, explanations, documentation, arguments, and stories. Natural writing can be formal and complex. Use the intended reader, purpose, source voice, and editing intensity to decide how much to change.
 
+Preserve passages that already work. Use the guidance below to diagnose a specific problem, without making every piece equally plain, tidy, or explicit. Compare the whole result with the source: locally simpler sentences can still produce repetitive pacing or flatten a distinctive voice. Repair that effect through the relationships between ideas, without adding random variation.
+
 - Develop the thought instead of merely exchanging words. Arrange the existing material so the reader can follow the request, explanation, argument, or events. Keep useful context and reasoning; do not shorten a passage until it loses its point.
 - Make actors, actions, and consequences concrete where the source supports them. Let evidence, mechanisms, or existing actions carry claims that adjectives only announce. Preserve meaningful claims when their supporting detail is missing; flag the gap when appropriate instead of inventing support.
 - Let sentence length follow the thought. A short sentence can state a decision or result; a longer one can connect conditions, reasoning, and exceptions. Avoid fixed alternation, forced fragments, and a uniformly clipped rhythm. Read for natural emphasis within the chosen register, without automatically making formal prose sound spoken.
