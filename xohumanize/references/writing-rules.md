@@ -39,18 +39,23 @@ Use direct verbs and concrete descriptions. The lists below are editing flags, n
 - Never add typos, broken grammar, arbitrary fragments, slang, or random sentence variation as camouflage. Preserve intentional dialect or informal voice when relevant to the brief.
 - End when the reader has what they need. Remove conclusions that merely repeat the opening or praise the subject.
 
-## Natural storytelling
+## Natural prose across genres
 
-For stories, folktales, and anecdotes, use a voice that feels natural when told aloud, within the requested style and editing intensity. Preserve deliberate literary language, dialect, and formal narration when they serve the author's voice. Do not apply a conversational storyteller's voice to unrelated technical or professional writing.
+Apply these principles to emails, essays, reports, explanations, documentation, arguments, and stories. Natural writing can be formal and complex. Use the intended reader, purpose, source voice, and editing intensity to decide how much to change.
 
-- Let existing actions reveal character. When a scene already shows someone ignoring a request or taking more than their share, reduce redundant labels explaining their character. Keep motives and emotions that the action alone does not establish; do not invent gestures or incidents to replace them.
-- Give dialogue room to affect the scene. Place an existing plea, answer, or refusal where it interrupts or advances the action, preserving event order. Use paragraph breaks when the speaker changes. Simplify fictional dialogue when the editing brief permits it, while preserving its intent and character voice. Keep documentary quotations exact, and do not invent dialogue for a factual anecdote.
-- Let pacing follow events. Use space and shorter sentences for a decision, obstacle, or discovery when useful; connect actions that belong together. Avoid making every sentence short or every paragraph a dramatic pause. Do not repeat stock lines such as "There was one problem" across unrelated stories.
-- Keep cause and effect easy to follow. Preserve what each character knows, believes, intends, and only pretends to feel. A deliberate betrayal must not become a forgotten promise; feigned fear must remain feigned. Preserve a character's lie as dialogue without presenting it as the narrator's factual claim.
-- Cut stacked adjectives and repeated descriptions of the same action. Keep details that establish setting, explain an outcome, distinguish a character, or carry the story's voice. Clearer narration need not flatten the atmosphere or erase an important event.
-- Finish at the story's natural ending. Let a final action or line land without adding a moral or explaining the twist unless the source or brief calls for it.
+- Develop the thought instead of merely exchanging words. Arrange the existing material so the reader can follow the request, explanation, argument, or events. Keep useful context and reasoning; do not shorten a passage until it loses its point.
+- Make actors, actions, and consequences concrete where the source supports them. Let evidence, mechanisms, or existing actions carry claims that adjectives only announce. Preserve meaningful claims when their supporting detail is missing; flag the gap when appropriate instead of inventing support.
+- Let sentence length follow the thought. A short sentence can state a decision or result; a longer one can connect conditions, reasoning, and exceptions. Avoid fixed alternation, forced fragments, and a uniformly clipped rhythm. Read for natural emphasis within the chosen register, without automatically making formal prose sound spoken.
+- Give each paragraph a useful job and connect it to the next. Move between ideas through their actual relationship: sequence, evidence, qualification, consequence, or contrast. Use explicit transitions where they help, without adding generic bridge sentences or requiring equal paragraph lengths.
+- Keep precise words and purposeful repetition. Repeating a technical term, a party's name, or the subject of a rule can be clearer than rotating synonyms. Retain necessary qualifications and complexity while removing stacked adjectives, redundant explanations, and ceremonial padding.
+- Preserve the author's stance, intent, and limits. Keep the distinction between belief and fact, permission and obligation, intention and accident, and sequence and causation. A smoother sentence must not silently strengthen the claim or simplify away an exception.
+- End when the purpose is fulfilled. Keep a needed request, recommendation, conclusion, or ending. Avoid appending a summary that merely praises or repeats the passage.
 
-Before returning a narrative edit, compare the event sequence, character intentions, dialogue meaning, and ending with the source. Judge the revision by readability and fidelity; a reported detector-score change does not establish which editing choices caused it.
+Adapt the technique to the material. An email may need a clear request and its reason; a report may need findings with their limitations; an explanation may need an ordered mechanism; a rule may need a named actor, condition, obligation, and exception. Include these only when relevant and supported, without forcing every piece into a template.
+
+In narratives, let existing actions reveal character and give dialogue space to affect the scene. Preserve event order, motives, and what characters know or pretend to feel. A deliberate betrayal must not become a forgotten promise. Rephrase fictional dialogue only within the editing brief; preserve documentary quotations and never invent dialogue for factual anecdotes. Retain atmosphere and a purposeful literary voice. Let the ending stand without adding a moral unless requested.
+
+Before returning an edit, check its progression, emphasis, and meaning against the source. Judge the result by readability, voice, and fidelity; a reported detector-score change does not establish which editing choices caused it.
 
 ## Requests for "0% AI"
 

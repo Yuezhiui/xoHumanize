@@ -6,6 +6,12 @@ Use more than one relevant sample when available. With a single short sample, pr
 
 For each proposed trait, give a short description, evidence identifying the sample and a brief excerpt or observation, and confidence (`tentative` or `supported`). A tendency supported by several relevant passages has more weight than one isolated construction. User corrections take priority over inferred traits. A profile can evolve when the user supplies new evidence; do not automatically train it on generated rewrites.
 
+## Reference taste across genres
+
+A reference can guide editorial choices without supplying a universal voice. Identify which part of a page the user means when it contains multiple authors or registers; if the distinction is not essential, explain the relevant differences and proceed. Transfer useful traits, adapting them to the current audience. Do not import the reference's facts, historical attitudes, spelling, or distinctive wording into unrelated work.
+
+The [National Archives page on the Articles of Confederation](https://www.archives.gov/milestone-documents/articles-of-confederation) is a reference for specificity and purposeful structure. Its modern introduction develops a historical explanation through named people, dates, and consequences. The transcript identifies parties, powers, conditions, and exceptions, with recurring terms and clauses of varying length. The editorial lesson is to make relationships explicit and give necessary detail room. Archaic diction and long legal sentences are not default style requirements. These observations do not validate a detector score.
+
 ## Portable profile
 
 When a structured profile is requested, use this JSON shape:

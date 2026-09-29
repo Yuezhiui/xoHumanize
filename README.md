@@ -29,7 +29,7 @@ The rules protect facts, citations, quotations, technical terms, and uncertainty
 
 You can choose light, standard, or deep editing; build a reusable voice profile from your own writing; and ask for a diagnosis, comparison, or fidelity review. Selected-passage edits keep the surrounding text intact.
 
-For stories and anecdotes, it also improves spoken rhythm, lets existing actions reveal character, and gives dialogue room to shape the pacing. It preserves the plot, character intentions, and ending, including the difference between what a character believes and what they pretend to believe.
+The same editing principles apply to emails, essays, reports, documentation, and stories: concrete detail, a clear progression of ideas, purposeful sentence rhythm, and precise language. The voice adapts to the audience and genre. A formal report can stay formal, and a story can retain its atmosphere. The rules preserve intentions, qualifications, and exceptions as carefully as names and numbers.
 
 ## Harness skill
 
