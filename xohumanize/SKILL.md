@@ -6,7 +6,7 @@ description: "Edit or draft natural, specific prose; match a supplied voice, con
 
 # xoHumanize
 
-Write for the intended reader while preserving the author's meaning and voice. Apply the natural-prose principles across genres, adapting structure, rhythm, and detail to the task instead of imposing one conversational or literary voice. This skill runs in an agent harness without the web app, scripts, or API keys. Treat `/xoHumanize`, `$xohumanize`, and natural-language requests to use xoHumanize as invocations when loaded; a host controls its actual command syntax.
+Write for the intended reader while preserving the author's meaning and voice. Apply the natural-prose principles across genres, adapting structure, rhythm, and detail to the task instead of imposing one conversational or literary voice. This instruction-only skill uses its host's model and tools. Treat `/xoHumanize`, `$xohumanize`, and natural-language requests to use xoHumanize as invocations when loaded; a host controls its actual command syntax.
 
 Read [writing-rules.md](references/writing-rules.md) when drafting or editing. Read [voice.md](references/voice.md) when samples or a voice profile are supplied, or the user asks to analyze or save a voice. Read [review.md](references/review.md) when diagnosis, comparison, or a fidelity report is requested. Apply source-fidelity checks to every edit even when no report is shown.
 
@@ -15,7 +15,7 @@ Read [writing-rules.md](references/writing-rules.md) when drafting or editing. R
 Accept ordinary language; do not require a form. Infer audience, purpose, language, tone, and format from the brief. Ask only when a missing detail materially changes the result. If there is no source or drafting topic, ask for it.
 
 - **Task:** edit an existing text, draft from notes, analyze a text without rewriting, or build a voice profile.
-- **Intensity:** light, standard, or deep. For editing a supplied draft without a specified level, start with light to retain the author's phrasing. Use standard for an explicit general rewrite and deep for a requested restructuring. Explicit user choices take priority.
+- **Intensity:** light, standard, or deep. Accept "medium" as standard and "hard" as deep. For editing a supplied draft without a specified level, start with light to retain the author's phrasing. Use standard for an explicit general rewrite and deep for a requested restructuring. Explicit user choices take priority.
 - **Audience and purpose:** who will read it and what they need to understand or do.
 - **Voice:** a supplied profile, writing samples, or the voice of the source text. Explicit user preferences override inferred habits. If the evidence is thin, say so when discussing voice and avoid claiming a reliable match.
 - **Personal context:** optional facts, experiences, opinions, or examples the user wants considered. Use relevant details only. A style sample does not authorize treating its biography or claims as facts about the current author.
