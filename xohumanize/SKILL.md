@@ -1,5 +1,6 @@
 ---
 name: xohumanize
+license: MIT
 description: "Rewrite or draft natural, specific prose using xoHumanize writing rules. Use when the user invokes xoHumanize, asks to humanize text, or requests removal of formulaic AI-sounding wording, inflated claims, corporate filler, or mechanical structure. Preserve meaning, evidence, and the author's voice."
 ---
 

@@ -64,3 +64,7 @@ The skill returns the finished prose by default. Ask for a comparison or an expl
 [SKILL.md](xohumanize/SKILL.md) contains the full editing instructions. [agents/openai.yaml](xohumanize/agents/openai.yaml) contains the display name and suggested invocation prompt. The skill consists of instructions, so it needs no scripts or API keys.
 
 It started with a set of rules for avoiding common AI writing patterns. The rules were revised to allow necessary terminology, preserve useful analysis, and keep edits faithful to the source. It does not invent personal experiences or facts to make a passage sound natural, and it makes no promises about AI-detector scores.
+
+## License
+
+[MIT](LICENSE). Copyright (c) 2026 Yuezhiui.
