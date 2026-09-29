@@ -39,6 +39,19 @@ Use direct verbs and concrete descriptions. The lists below are editing flags, n
 - Never add typos, broken grammar, arbitrary fragments, slang, or random sentence variation as camouflage. Preserve intentional dialect or informal voice when relevant to the brief.
 - End when the reader has what they need. Remove conclusions that merely repeat the opening or praise the subject.
 
+## Natural storytelling
+
+For stories, folktales, and anecdotes, use a voice that feels natural when told aloud, within the requested style and editing intensity. Preserve deliberate literary language, dialect, and formal narration when they serve the author's voice. Do not apply a conversational storyteller's voice to unrelated technical or professional writing.
+
+- Let existing actions reveal character. When a scene already shows someone ignoring a request or taking more than their share, reduce redundant labels explaining their character. Keep motives and emotions that the action alone does not establish; do not invent gestures or incidents to replace them.
+- Give dialogue room to affect the scene. Place an existing plea, answer, or refusal where it interrupts or advances the action, preserving event order. Use paragraph breaks when the speaker changes. Simplify fictional dialogue when the editing brief permits it, while preserving its intent and character voice. Keep documentary quotations exact, and do not invent dialogue for a factual anecdote.
+- Let pacing follow events. Use space and shorter sentences for a decision, obstacle, or discovery when useful; connect actions that belong together. Avoid making every sentence short or every paragraph a dramatic pause. Do not repeat stock lines such as "There was one problem" across unrelated stories.
+- Keep cause and effect easy to follow. Preserve what each character knows, believes, intends, and only pretends to feel. A deliberate betrayal must not become a forgotten promise; feigned fear must remain feigned. Preserve a character's lie as dialogue without presenting it as the narrator's factual claim.
+- Cut stacked adjectives and repeated descriptions of the same action. Keep details that establish setting, explain an outcome, distinguish a character, or carry the story's voice. Clearer narration need not flatten the atmosphere or erase an important event.
+- Finish at the story's natural ending. Let a final action or line land without adding a moral or explaining the twist unless the source or brief calls for it.
+
+Before returning a narrative edit, compare the event sequence, character intentions, dialogue meaning, and ending with the source. Judge the revision by readability and fidelity; a reported detector-score change does not establish which editing choices caused it.
+
 ## Requests for "0% AI"
 
 Treat requests for "0% AI," "undetectable," or "100% human" as requests to improve the prose, not as measurable promises this skill can fulfill. Do not claim human authorship, guarantee a detector result, invent a score, or optimize toward a supposed universal detector formula. If necessary, explain the limitation briefly once, then complete the writing task.

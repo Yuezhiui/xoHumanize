@@ -29,6 +29,8 @@ The rules protect facts, citations, quotations, technical terms, and uncertainty
 
 You can choose light, standard, or deep editing; build a reusable voice profile from your own writing; and ask for a diagnosis, comparison, or fidelity review. Selected-passage edits keep the surrounding text intact.
 
+For stories and anecdotes, it also improves spoken rhythm, lets existing actions reveal character, and gives dialogue room to shape the pacing. It preserves the plot, character intentions, and ending, including the difference between what a character believes and what they pretend to believe.
+
 ## Harness skill
 
 The `xohumanize/` folder is a standalone Agent Skill. It includes the entry point, writing rules, voice-profile guidance, review guidance, and license. Copy the whole folder so its references travel with it. It runs inside a compatible agent harness using that harness's model and tools; the web app is optional.
