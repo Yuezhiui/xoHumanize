@@ -1,0 +1,4 @@
+interface:
+  display_name: "xoHumanize"
+  short_description: "Natural, specific prose without formulaic filler"
+  default_prompt: "Use $xohumanize to revise my text for a natural voice while preserving its meaning, facts, and citations."
