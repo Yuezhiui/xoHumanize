@@ -32,12 +32,35 @@ Use direct verbs and concrete descriptions. The lists below are editing flags, n
 
 - Use active voice when the actor matters and is known. Keep passive voice when the recipient or result is the focus, or when the actor is unknown. Never invent an actor.
 - Vary sentence length according to thought, not a mechanical pattern. Preserve repeated technical terms where they prevent ambiguity. Remove accidental repetition without rotating through strained synonyms.
-- Do not introduce em dashes in authored prose. Use periods, commas, parentheses, or semicolons as appropriate. Preserve em dashes inside exact quotations and protected source material unless the user authorizes editing them.
+- Avoid introducing em dashes by default. A supplied voice sample or explicit punctuation preference can override this default; use dashes where they serve that voice, without a mechanical quota. Preserve em dashes inside exact quotations and protected source material unless the user authorizes editing them.
 - Prefer literal language. Use an analogy only if it makes a difficult idea easier to understand and does not distort it. Avoid stock journeys, tapestries, and abstract landscapes.
 - Match the writer's register. Do not turn formal, scholarly, or professional prose into chatty prose by default. Use contractions where natural for that voice.
 - Avoid forced enthusiasm, fake intimacy, unnecessary rhetorical questions, and excessive exclamation marks. Add emojis only when explicitly requested or clearly required by the supplied format and audience.
 - Never add typos, broken grammar, arbitrary fragments, slang, or random sentence variation as camouflage. Preserve intentional dialect or informal voice when relevant to the brief.
 - End when the reader has what they need. Remove conclusions that merely repeat the opening or praise the subject.
+
+## Patterns across a passage
+
+Review paragraph shape as well as individual sentences. Treat these as editorial clues, not evidence of AI authorship. One dash, passive construction, formal word, hedge, or curly quote does not justify changing an effective passage. Act on a specific problem with meaning or readability, or a repeated pattern that distracts from the chosen voice. Preserve intentional rhetoric, quotations, names, and genre conventions.
+
+- Cut staged introductions that announce a routine point, including standalone "Here's the thing" or "Honestly?" openings. Keep candid phrasing when it carries the author's actual stance.
+- Remove a closer that only repeats a paragraph or explains what an example already makes clear. Keep a short sentence when it adds a consequence, request, or needed conclusion. Check for the same emphatic ending repeated across sections.
+- Replace vague declarations of hidden truth or wisdom with the claim the source supports. Preserve a purposeful metaphor or literary line that contributes to the piece.
+- Remove defenses against objections nobody raised and invented alternatives that merely make the preferred option look better. Keep real objections, scope limits, corrections, and relevant comparisons; preserve any substantive claim inside the removed framing.
+- Let the content determine how many examples or list items belong together. Do not force three-part phrasing or convert a real three-item list into two. Preserve every distinct item, ranking, and timing relationship when merging sentences or lists.
+- Check repeated sentence openings. Merge accidental repetition when it improves flow; keep deliberate parallelism and repeated terms that make rules or instructions clear.
+- Simplify stacked qualifiers only when they repeat the same uncertainty. Preserve meaningful probability, scope, and evidence limits; "may" must not become "will."
+- Replace a vague association with the actual relationship only when supplied or verified. Do not infer that a person founded or led an organization from a bare connection to it.
+- Remove chat greetings, praise, and follow-up offers accidentally included in a standalone document. Preserve salutations, sign-offs, and genuine invitations appropriate to a letter, email, or conversation.
+- Remove model-cutoff boilerplate and unsupported guesses. Keep dates that establish freshness, source limitations that matter, and uncertainty in the author's claims. Do not turn missing information into a confident statement or delete substantive claims without flagging the gap.
+- Cut an opening sentence that merely restates its heading, and narration of how a document was assembled when the reader does not need it. Retain useful provenance, methods, navigation, and accounts of changes in release notes or migration guides.
+- For replies with visible shared context, lead with the answer, request, or decision and retain the reasoning needed to act. Do not re-explain agreed background. Keep necessary context in standalone material, and do not assume knowledge the reader has not demonstrated.
+
+## Formatting that serves the reader
+
+Remove repetitive bold labels, decorative separators, emojis, or title-case headings when they add no navigational value. Preserve meaningful lists, accessible structure, required templates, proper-name capitalization, and a supplied house style. Use sentence-case headings by default when revising their style.
+
+Match quotation-mark style to the target format or supplied voice rather than treating curly quotes as suspicious. Keep protected quotation wording intact. Apply hyphenation according to grammar and the relevant language or house style: do not replace every compound with an unhyphenated form or alter identifiers, technical terms, and proper names. These English examples are not rules for other languages. Apply the broader principles in the source language, including intentional code-switching, unless translation is requested.
 
 ## Natural prose across genres
 

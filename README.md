@@ -35,6 +35,10 @@ Editing defaults to Light and follows the voice of your draft. Specify the audie
 
 All levels preserve substantive meaning, facts, citations, qualifications, and the author's position. Intensity controls the extent of editing, not a detector score.
 
+The skill checks for staged openings, repeated closers, forced grouping, decorative formatting, and leftover chatbot wording. It preserves purposeful rhetoric and useful structure. For replies with shared context, it leads with the answer and keeps the reasoning needed to act.
+
+When asked to edit a file, it changes prose within the requested scope while preserving code, commands, metadata, data, template syntax, and link destinations. Rankings and timing relationships remain part of the protected meaning.
+
 ```text
 $xohumanize
 Use hard editing. Keep the tone formal and preserve the technical details:
@@ -58,6 +62,8 @@ The skill follows your explicit voice instructions, a supplied profile or releva
 Ask it to analyze your writing samples and build a reusable voice profile. To reuse that profile across chats, ask the harness to save it to a private file and load that file in the next chat. Keep profiles and drafts outside the distributed skill folder.
 
 Finished prose is the default output. You can also request a diagnosis without rewriting, an edit of one passage, a before/after comparison, or a review of changes in meaning and detail.
+
+Ask to show the editing process for a first revision, a short critique, and the final revision. A supplied voice sample or explicit punctuation preference can override the default avoidance of new em dashes. The skill preserves your opinions and reactions rather than inventing a personal stance.
 
 In Codex, use `$xohumanize` or select it through `/skills`. Command syntax depends on the host. See the [official skills guide](https://learn.chatgpt.com/docs/build-skills).
 
